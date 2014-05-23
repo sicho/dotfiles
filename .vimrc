@@ -7,7 +7,6 @@ set number
 set ruler
 set nowrap
 set autoindent
-set whichwrap=h,l
 
 set list
 set listchars=tab:>\ ,trail:~,eol:↲
