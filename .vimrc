@@ -40,3 +40,10 @@ if neobundle#is_installed('molokai')
 	colorscheme molokai
 endif
 
+nnoremap ZZ <Nop>
+nnoremap ZQ <Nop>
+nnoremap Q <Nop>
+
+nnoremap <C-a> ^
+nnoremap <C-e> $
+
