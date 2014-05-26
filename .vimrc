@@ -1,7 +1,5 @@
 syntax enable
 
-filetype plugin indent off
-
 if has('vim_starting')
 	set nocompatible
 	set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -37,6 +35,8 @@ set hlsearch
 set ignorecase
 set smartcase
 
-set t_Co=256
-colorscheme molokai
+if neobundle#is_installed('molokai')
+	set t_Co=256
+	colorscheme molokai
+endif
 
