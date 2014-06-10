@@ -14,6 +14,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'jiangmiao/simple-javascript-indenter'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 call neobundle#end()
 
@@ -50,6 +51,12 @@ if neobundle#is_installed('molokai')
     set t_Co=256
     colorscheme molokai
 endif
+
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_auto_colors=0
+let g:indent_guides_guide_size=1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=240
 
 inoremap <C-c> <ESC>
 
